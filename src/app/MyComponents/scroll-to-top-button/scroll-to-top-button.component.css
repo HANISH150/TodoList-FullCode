@@ -1,0 +1,23 @@
+.scroll-to-top-button {
+    height: 3rem;
+    width: 3rem;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.23);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16.5px);
+    -webkit-backdrop-filter: blur(16.5px);
+    color: white;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 9999;
+    transition: transform 0.3s ease;
+}
+.scroll-to-top-button:hover{
+    transform: scale(1.1);
+    box-shadow:0 0 10px whitesmoke;
+}
+  

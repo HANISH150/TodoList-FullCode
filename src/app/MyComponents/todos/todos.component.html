@@ -1,0 +1,23 @@
+<!-- ADDing todo's Component -->
+<div class="container">
+    <app-add-item (todoAdd)="addTodo($event)"></app-add-item>
+</div>
+<!-- listing all todo's -->
+
+<div>
+    <h4 class="text-center text-light mb-3">Your TodoList</h4>
+    <!-- using ng-if-else to display as empty if TodosList is empty , else we display all the todos -->
+    <div class="todo-list">
+        <div *ngIf="todos.length===0; else elseBlock">
+            <div class="text-center">
+                <img style="height: 10rem;" src="assets/images/Empty.svg" alt="Example Image">
+                <h5 class="text-center text-light mt-3">TodoList is Empty...Add some Todos !!</h5>
+            </div>
+        </div>
+        <ng-template #elseBlock>
+            <ul class="col-md-8 mx-auto" *ngFor="let todo of todos; index as i">
+                <app-todo-item  [todo]="todo" [i]="i" (todoDelete)="deleteTodo($event)" (toggleTodo)="todoToggle($event)"></app-todo-item>
+            </ul>
+        </ng-template>
+    </div>
+</div>

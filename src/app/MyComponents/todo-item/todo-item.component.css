@@ -1,0 +1,13 @@
+.strike{
+    text-decoration: line-through;
+}
+.todo-card{
+    background: rgba(19, 40, 120, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+    border: 1px solid rgba(19, 40, 120, 1);
+    margin-right: 2rem;
+    padding: 1rem;
+}
